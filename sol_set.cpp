@@ -1,14 +1,12 @@
+#include <iostream>
+#include <set>
+
+using namespace std;
+
 set<char> get_distinct_chars(char *str){
-    char *new_str = str;
     set<char> table;
-    while (true){
-        if (*new_str == '\0'){
-            break;
-        } else{
-            table.insert(*new_str);
-            new_str++;
-            continue;
-        }
+    for (; *str != '\0' ; ++str) {
+        table.insert(*str);
     }
     return table;
 }
