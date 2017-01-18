@@ -4,7 +4,7 @@ using namespace std;
 
 vector<int> get_distinct_chars(char *str){
     // 65~90 : A~Z, 97~122 : a~z
-    // 宣告123元素大小的陣列, 並初始化所有元素為0
+    // 宣告123元素大小的陣列, 並初始化所有元素為0, 假定str只有大小寫英文字母
     vector<int> table(123, false);
     for (; *str != '\0'; ++str) {
         table[*str] = true;
