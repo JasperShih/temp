@@ -15,12 +15,7 @@ vector<int> get_distinct_chars(char *str){
 int main (int argc, char **argv) {
     char str[] = "HelloWorld";
     vector<int> chars = get_distinct_chars(str);
-    for (int ascii_chars = 65; ascii_chars <= 90; ++ascii_chars) {
-        if (chars[ascii_chars]){
-            cout <<(char) ascii_chars <<" ";
-        }
-    }
-    for (int ascii_chars = 97; ascii_chars <= 122; ++ascii_chars) {
+    for (int ascii_chars = 65; ascii_chars <= 122; ++ascii_chars) {
         if (chars[ascii_chars]){
             cout <<(char) ascii_chars <<" ";
         }
